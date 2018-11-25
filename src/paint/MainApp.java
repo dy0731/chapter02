@@ -11,6 +11,7 @@ public class MainApp {
 		
 		Point pt2 = new Point(100, 200);
 		pt2.show();
+		pt2.show(false);
 
 	}
 
