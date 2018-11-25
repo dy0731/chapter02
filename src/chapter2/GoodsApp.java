@@ -4,11 +4,13 @@ public class GoodsApp {
 
 	public static void main(String[] args) {
 		
-		Goods goods = new Goods();
-		goods.setName("nikon");
-		goods.setPrice(2000);
-		goods.setCountStock(30);
-		goods.setCountSold(20);
+//		Goods goods = new Goods();
+//		goods.setName("nikon");
+//		goods.setPrice(2000);
+//		goods.setCountStock(30);
+//		goods.setCountSold(20);
+		
+		Goods goods = new Goods("nikon",2000,30,20);
 		
 		goods.showInfo();
 		

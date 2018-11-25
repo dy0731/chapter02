@@ -6,8 +6,31 @@ public class Song {
 	private String artist;
 	private String album;
 	private String composer;
-	private String year;
-	private String track;
+	private int year;
+	private int track;
+	
+	public Song() {
+		
+	}
+	
+	public Song(String title, String artist) {
+//		this.title = title;
+//		this.artist = artist;
+//		this.album = "";
+//		this.composer = "";
+//		this.year = -1;
+//		this.track = -1;
+		this(title, artist, "", "", -1, -1);
+	}
+	
+	public Song(String album, String artist, String composer, String title, int track, int year) {
+		this.album = album;
+		this.artist = artist;
+		this.composer = composer;
+		this.title = title;
+		this.track = track;
+		this.year = year;
+	}
 	
 	public String getTitle() {
 		return title;
@@ -33,16 +56,16 @@ public class Song {
 	public void setComposer(String composer) {
 		this.composer = composer;
 	}
-	public String getYear() {
+	public int getYear() {
 		return year;
 	}
-	public void setYear(String year) {
+	public void setYear(int year) {
 		this.year = year;
 	}
-	public String getTrack() {
+	public int getTrack() {
 		return track;
 	}
-	public void setTrack(String track) {
+	public void setTrack(int track) {
 		this.track = track;
 	}
 	

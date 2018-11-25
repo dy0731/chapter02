@@ -8,6 +8,9 @@ public class MainApp {
 		pt1.setX(10);
 		pt1.setY(20);
 		pt1.show();
+		
+		Point pt2 = new Point(100, 200);
+		pt2.show();
 
 	}
 
